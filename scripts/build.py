@@ -193,6 +193,55 @@ def collect(config):
     return posts, categories, tags
 
 
+def build_analytics(config):
+    """按 config.json 生成统计脚本。本地预览与 file:// 不加载，避免污染数据。"""
+    a = config.get("analytics") or {}
+    if not a.get("enabled", True):
+        log("访问统计：已关闭（config.json → analytics.enabled）")
+        return ""
+
+    cf = str(a.get("cloudflare_token") or "").strip()
+    ga = str(a.get("ga4_id") or "").strip()
+    bd = str(a.get("baidu_id") or "").strip()
+    if not (cf or ga or bd):
+        log("访问统计：还没填 token / ID，暂不注入脚本（config.json → analytics）")
+        return ""
+
+    lines = []
+    if cf:
+        beacon = json.dumps({"token": cf}, ensure_ascii=False, separators=(",", ":"))
+        lines.append("  add('%s', {'data-cf-beacon': %s});" % (
+            "https://static.cloudflareinsights.com/beacon.min.js", json_for_script(beacon)))
+    if ga:
+        lines.append("  window.dataLayer = window.dataLayer || [];")
+        lines.append("  function gtag(){window.dataLayer.push(arguments);}")
+        lines.append("  gtag('js', new Date());")
+        lines.append("  gtag('config', %s);" % json_for_script(ga))
+        lines.append("  add('https://www.googletagmanager.com/gtag/js?id=' + %s);" % json_for_script(ga))
+    if bd:
+        lines.append("  window._hmt = window._hmt || [];")
+        lines.append("  add('https://hm.baidu.com/hm.js?' + %s);" % json_for_script(bd))
+
+    enabled = ", ".join(n for n, v in (("Cloudflare", cf), ("GA4", ga), ("百度统计", bd)) if v)
+    log("访问统计：已启用 " + enabled)
+
+    return (
+        "<script>\n"
+        "(function(){\n"
+        "  var host = location.hostname;\n"
+        "  if (location.protocol === 'file:' || !host || host === 'localhost' ||\n"
+        "      host === '127.0.0.1' || /\\.local$/.test(host)) return;\n"
+        "  function add(src, attrs){\n"
+        "    var s = document.createElement('script'); s.src = src; s.async = true;\n"
+        "    if (attrs) { for (var k in attrs) s.setAttribute(k, attrs[k]); }\n"
+        "    document.head.appendChild(s);\n"
+        "  }\n"
+        + "\n".join(lines) + "\n"
+        "})();\n"
+        "</script>"
+    )
+
+
 def base_values(config, posts, categories, tags):
     repo = config.get("repo", "")
     repo_url = "https://github.com/" + repo
@@ -217,6 +266,7 @@ def base_values(config, posts, categories, tags):
         "CONTRIBUTING_URL": h(repo_url + "/blob/main/CONTRIBUTING.md"),
         "BASE_URL": h(base),
         "YEAR": str(datetime.now().year),
+        "ANALYTICS_HTML": build_analytics(config),
         "categories": categories,
         "tags": tags,
         "posts": posts,

@@ -24,7 +24,8 @@
 - 📖 文章页自动生成目录（TOC）、阅读进度条、上一篇 / 下一篇
 - 🔗 每篇文章一个干净的静态地址 `p/<slug>/`，带 title / description / OG 元信息
 - 📱 手机、平板、桌面自适应
-- 📦 `marked` 已放进仓库，站点**不依赖任何外部 CDN**
+- 📦 `marked` 已放进仓库，站点本身零外部依赖（启用访问统计后才会加载一段 CF 脚本）
+- 📊 访问统计已预留：`config.json` 填一个 token 即启用 Cloudflare Web Analytics，本地预览不计数
 - 🤖 GitHub Actions：push 文章后自动重建站点、索引和下面的文章目录
 
 ## 目录结构
@@ -69,7 +70,37 @@ push 后 Actions 自动构建，约 1 分钟网站更新。细节看 [CONTRIBUTI
 
 ## 绑自己的域名
 
-在 DNS 加一条 CNAME 指向 `iguoxing.github.io`，然后在仓库 `Settings → Pages → Custom domain` 填域名即可。脚本不会动 `docs/CNAME`，需要的话自己新建一行写域名。当前 `config.json` 里的 `base_url` 是 Pages 默认地址，换域名后同步改一下。
+在 DNS 加一条 CNAME 指向 `iguoxing.github.io`，把域名填进 `config.json` 的 `custom_domain`（构建时会自动生成 `docs/CNAME`），再到仓库 `Settings → Pages → Custom domain` 填一次即可。当前 `config.json` 里的 `base_url` 是 Pages 默认地址，换域名后同步改一下。
+
+## 访问统计
+
+用的是 **Cloudflare Web Analytics**：免费、不用 Cookie、不用弹 GDPR 同意横幅、**不用改 DNS**，能看到 PV / 访问数、来源、国家地区、设备类型和热门页面。数据只在 CF 后台看，页面上不显示阅读数。
+
+### 第一次启用（只需一次）
+
+1. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/)，左侧 `Analytics & Logs → Web Analytics` → `Add a site`
+2. `Set up hostname` 填站点域名：现在填 `iguoxing.github.io`；以后绑了自定义域名就填那个域名
+3. 在站点卡片点 `Manage site`，复制 JS snippet 里 `data-cf-beacon` 中的 **token**（一串字符）
+4. 把 token 填进 `config.json`：
+
+   ```json
+   "analytics": {
+     "enabled": true,
+     "cloudflare_token": "这里粘贴 token"
+   }
+   ```
+
+5. `git push` → Actions 自动重建，几分钟后 CF 后台就能看到数据
+
+> CF 按 hostname 收数据，所以 `iguoxing.github.io` 下你其他 Pages 站点也会混进来。想数据干净：在 CF 后台按路径 `/techx-chuhai` 过滤，或者绑一个专属域名（例如 `notes.novaxtra.com`）再填那个域名。
+
+### 其他说明
+
+- 统计脚本由 `scripts/build.py` 自动注入到**首页和每一篇文章页**的 `</body>` 前，不用手动改 HTML
+- 本机 `localhost` 预览和 `file://` 直接打开时**不加载**统计脚本，不会污染数据
+- `analytics.enabled` 改成 `false` 可一键全关；token 留空时也不会注入任何脚本
+- `ga4_id` / `baidu_id` 是预留位，填了会一起加载（GA4 国内常被墙，百度统计适合国内读者）
+- 换域名后记得同步改 `config.json` 的 `base_url` 和 CF 后台的 hostname
 
 ## 文章目录
 

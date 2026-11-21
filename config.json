@@ -23,5 +23,12 @@
     { "label": "novaxtra.com", "url": "https://novaxtra.com" }
   ],
   "license": "CC BY-NC-SA 4.0",
-  "note": "改这个文件可以换站点名、简介、栏目和导航链接；改完跑一次 python3 scripts/build.py 即可。"
+  "analytics": {
+    "enabled": true,
+    "cloudflare_token": "",
+    "ga4_id": "",
+    "baidu_id": "",
+    "note": "填入 cloudflare_token 即自动启用访问统计；ga4_id / baidu_id 可选，填了会一起加载。enabled 改成 false 可一键全关。本地预览和 file:// 不会计数。"
+  },
+  "note": "改这个文件可以换站点名、简介、栏目、导航链接和统计开关；改完跑一次 python3 scripts/build.py 即可。"
 }
