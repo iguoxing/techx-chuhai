@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{SITE_NAME}} · {{TAGLINE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{SITE_NAME}} · {{TAGLINE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:url" content="{{BASE_URL}}">
+  <meta name="theme-color" content="#0a0f1c">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <script src="assets/theme.js"></script>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="./">
+      <span class="brand-mark">{{BRAND_INITIAL}}</span>
+      <span>{{SITE_NAME}}<small>{{TAGLINE}}</small></span>
+    </a>
+    <nav class="nav-links">
+      {{LINKS_HTML}}
+      <span class="nav-sep"></span>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换主题"></button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <span class="eyebrow">TechX · 出海知识库</span>
+    <h1>{{HERO_TITLE}} <span class="grad">{{HERO_HIGHLIGHT}}</span></h1>
+    <p>{{DESCRIPTION}}</p>
+    <div class="hero-stats">
+      <div class="stat"><b id="stat-posts">—</b><span>篇干货</span></div>
+      <div class="stat"><b id="stat-cats">—</b><span>个栏目</span></div>
+      <div class="stat"><b id="stat-updated">—</b><span>最近更新</span></div>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+  <div class="toolbar">
+    <div class="search-row">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <input id="search-input" type="search" placeholder="搜标题、摘要、标签…" autocomplete="off" aria-label="搜索文章">
+        <kbd>/</kbd>
+      </div>
+      <span class="result-count" id="result-count"></span>
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+
+  <div class="posts" id="posts"></div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© {{YEAR}} {{SITE_NAME}} · {{AUTHOR}}</span>
+    <a href="{{REPO_URL}}">GitHub 仓库</a>
+    <a href="{{CONTRIBUTING_URL}}">怎么写一篇文章</a>
+    <span class="dot">内容 {{LICENSE}} · 代码 MIT</span>
+  </div>
+</footer>
+
+<script type="application/json" id="site-data">{{SITE_DATA}}</script>
+<script src="assets/app.js"></script>
+</body>
+</html>

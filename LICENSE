@@ -1,0 +1,37 @@
+# 授权说明
+
+## 文章内容（posts/ 目录下的 Markdown 原文）
+
+采用 **知识共享 署名-非商业性使用-相同方式共享 4.0 国际**（CC BY-NC-SA 4.0）授权。
+
+- 允许：转载、分享、改编，需注明出处与作者
+- 不允许：商业用途
+- 改编后需采用相同授权
+
+全文条款：https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans
+
+转载时请保留原文链接，并注明「TechX 出海实验室」。
+
+## 站点代码（scripts/、site/、.github/ 下的代码与样式）
+
+采用 **MIT License**，可自由使用、修改、二次分发，无需授权，保留本声明即可。
+
+Copyright (c) 2026 TechX 出海实验室
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

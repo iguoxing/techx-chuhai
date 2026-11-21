@@ -1,0 +1,196 @@
+{
+  "site": {
+    "name": "TechX 出海实验室",
+    "tagline": "出海干货 · 只写能落地的",
+    "description": "把出海这件事拆开讲清楚：选品、独立站、投放、B2B 获客、AI 自动化、合规物流，以及踩过的坑。",
+    "author": "赵国星 · 国星聊成长",
+    "repo": "iguoxing/techx-chuhai",
+    "base_url": "https://iguoxing.github.io/techx-chuhai/"
+  },
+  "generated_at": "2026-11-21T16:52:16",
+  "updated": "2026-11-21",
+  "total": 4,
+  "categories": [
+    {
+      "name": "选品与市场",
+      "count": 1
+    },
+    {
+      "name": "独立站与建站",
+      "count": 0
+    },
+    {
+      "name": "流量与投放",
+      "count": 0
+    },
+    {
+      "name": "B2B 获客",
+      "count": 1
+    },
+    {
+      "name": "AI 自动化",
+      "count": 1
+    },
+    {
+      "name": "合规与物流",
+      "count": 0
+    },
+    {
+      "name": "复盘与案例",
+      "count": 1
+    }
+  ],
+  "tags": [
+    {
+      "name": "自动化",
+      "count": 2
+    },
+    {
+      "name": "PMF",
+      "count": 1
+    },
+    {
+      "name": "SOP",
+      "count": 1
+    },
+    {
+      "name": "WhatsApp",
+      "count": 1
+    },
+    {
+      "name": "决策模型",
+      "count": 1
+    },
+    {
+      "name": "冷启动",
+      "count": 1
+    },
+    {
+      "name": "工作流",
+      "count": 1
+    },
+    {
+      "name": "投放",
+      "count": 1
+    },
+    {
+      "name": "效率",
+      "count": 1
+    },
+    {
+      "name": "数据",
+      "count": 1
+    },
+    {
+      "name": "海关数据",
+      "count": 1
+    },
+    {
+      "name": "独立站",
+      "count": 1
+    },
+    {
+      "name": "线索",
+      "count": 1
+    },
+    {
+      "name": "选品",
+      "count": 1
+    },
+    {
+      "name": "邮件",
+      "count": 1
+    },
+    {
+      "name": "验证",
+      "count": 1
+    }
+  ],
+  "posts": [
+    {
+      "title": "AI 自动化别一上来就搭系统，先找那 20 分钟",
+      "date": "2026.11.21",
+      "date_iso": "2026-11-21",
+      "category": "AI 自动化",
+      "tags": [
+        "自动化",
+        "工作流",
+        "SOP",
+        "效率"
+      ],
+      "summary": "判断一件事该不该自动化，只需要三个数字：频率、单次耗时、判断是否可标准化。算完再动手。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/ai-automation-checklist/",
+      "reading_time": 2,
+      "word_count": 794,
+      "filename": "2026-11-21-ai-automation-checklist.md",
+      "slug": "ai-automation-checklist"
+    },
+    {
+      "title": "B2B 线索清洗，从名单到能发的第一封邮件",
+      "date": "2026.11.20",
+      "date_iso": "2026-11-20",
+      "category": "B2B 获客",
+      "tags": [
+        "线索",
+        "海关数据",
+        "自动化",
+        "邮件",
+        "WhatsApp"
+      ],
+      "summary": "一千条进口商名单不等于一千个客户。四步清洗把重复、经销商、无效联系方式全部挡在触达之前。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/b2b-lead-cleaning/",
+      "reading_time": 2,
+      "word_count": 824,
+      "filename": "2026-11-20-b2b-lead-cleaning.md",
+      "slug": "b2b-lead-cleaning"
+    },
+    {
+      "title": "选品别靠感觉，用一张 DPI 打分表",
+      "date": "2026.11.19",
+      "date_iso": "2026-11-19",
+      "category": "选品与市场",
+      "tags": [
+        "选品",
+        "数据",
+        "独立站",
+        "决策模型"
+      ],
+      "summary": "五个维度、每个 0–10 分，把「这个品能不能做」从拍脑袋变成一张能复盘的打分表。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/dpi-product-scoring/",
+      "reading_time": 3,
+      "word_count": 933,
+      "filename": "2026-11-19-dpi-product-scoring.md",
+      "slug": "dpi-product-scoring"
+    },
+    {
+      "title": "出海起步，先做 PMF 验证再谈投放",
+      "date": "2026.11.18",
+      "date_iso": "2026-11-18",
+      "category": "复盘与案例",
+      "tags": [
+        "PMF",
+        "投放",
+        "冷启动",
+        "验证"
+      ],
+      "summary": "预算烧在没验证的品上是最贵的学费。用三步最小验证，把「我觉得能卖」变成「数据说能卖」。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/pmf-before-ads/",
+      "reading_time": 2,
+      "word_count": 790,
+      "filename": "2026-11-18-pmf-before-ads.md",
+      "slug": "pmf-before-ads"
+    }
+  ]
+}

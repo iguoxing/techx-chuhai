@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}} · {{SITE_NAME}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:url" content="{{CANONICAL}}">
+  <meta property="article:published_time" content="{{DATE_ISO}}">
+  <meta name="author" content="{{AUTHOR}}">
+  <meta name="theme-color" content="#0a0f1c">
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg">
+  <script src="../../assets/theme.js"></script>
+  <link rel="stylesheet" href="../../assets/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":{{JSONLD_TITLE}},"description":{{JSONLD_DESC}},"datePublished":"{{DATE_ISO}}","author":{"@type":"Person","name":{{JSONLD_AUTHOR}}},"mainEntityOfPage":"{{CANONICAL}}"}</script>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="../../">
+      <span class="brand-mark">{{BRAND_INITIAL}}</span>
+      <span>{{SITE_NAME}}<small>{{TAGLINE}}</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="../../">全部文章</a>
+      {{LINKS_HTML}}
+      <span class="nav-sep"></span>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换主题"></button>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap post-layout">
+  <article>
+    <div class="post-head">
+      <div class="crumb"><a href="../../">首页</a> &nbsp;/&nbsp; <span class="cat">{{CATEGORY}}</span></div>
+      <h1>{{TITLE}}</h1>
+      <p class="post-summary">{{SUMMARY}}</p>
+      <div class="post-meta">
+        <span>{{AUTHOR}}</span>
+        <span>{{DATE}}</span>
+        <span>{{WORD_COUNT}} 字</span>
+        <span>约 {{READING_TIME}} 分钟</span>
+      </div>
+    </div>
+
+    <div id="post-content" class="md"></div>
+    <noscript><div class="noscript">本站文章由 Markdown 即时渲染，请开启 JavaScript。<br><br>正文预览：<pre>{{NOSCRIPT_PREVIEW}}</pre></div></noscript>
+
+    <div class="post-tags">{{TAGS_HTML}}</div>
+    <nav class="post-nav">{{PREV_HTML}}{{NEXT_HTML}}</nav>
+  </article>
+
+  <aside class="toc" id="toc">
+    <div class="toc-title">本页目录</div>
+    <ul id="toc-list"></ul>
+  </aside>
+</div>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© {{YEAR}} {{SITE_NAME}} · {{AUTHOR}}</span>
+    <a href="{{REPO_URL}}">GitHub 仓库</a>
+    <span class="dot">内容 {{LICENSE}} · 转载请注明出处</span>
+  </div>
+</footer>
+
+<script type="application/json" id="post-source">{{POST_JSON}}</script>
+<script src="../../assets/vendor/marked.min.js"></script>
+<script src="../../assets/post.js"></script>
+</body>
+</html>
