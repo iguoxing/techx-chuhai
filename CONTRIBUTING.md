@@ -9,7 +9,7 @@
 2. 填好文件顶部的 frontmatter，正文用 Markdown 正常写
 3. `git add` → `commit` → `push`
 
-push 之后 GitHub Actions 会自动跑 `scripts/build.py`，重新生成文章页、`site/posts.json` 索引和本页下方的文章目录，大约 1 分钟后网站刷新。什么都不用手动构建。
+push 之后 GitHub Actions 会自动跑 `scripts/build.py`，重新生成文章页、`docs/posts.json` 索引和本页下方的文章目录，大约 1 分钟后网站刷新。什么都不用手动构建。
 
 ## frontmatter 字段说明
 
@@ -44,7 +44,7 @@ draft: false                   # 选填，true = 不发布（本地也看不到�
 
 ## 图片怎么放
 
-把图片放进 `site/assets/images/`，正文里写：
+把图片放进 `docs/assets/images/`，正文里写：
 
 ```markdown
 ![说明](../../assets/images/你的图片.png)
@@ -56,8 +56,8 @@ draft: false                   # 选填，true = 不发布（本地也看不到�
 
 ```bash
 cd techx-chuhai
-python3 scripts/build.py          # 生成 site/ 下的页面和索引
-python3 -m http.server 8000 -d site
+python3 scripts/build.py          # 生成 docs/ 下的页面和索引
+python3 -m http.server 8000 -d docs
 # 浏览器打开 http://localhost:8000
 ```
 

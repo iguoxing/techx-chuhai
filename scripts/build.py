@@ -4,10 +4,10 @@
 TechX 出海实验室 · 站点构建脚本（零第三方依赖）
 
 扫描 posts/*.md → 生成：
-  site/index.html              首页（数据内联，file:// 直接打开也能用）
-  site/p/<slug>/index.html    每篇文章的静态落地页
-  site/posts.json             对外可用的文章索引
-  site/sitemap.xml / robots.txt
+  docs/index.html              首页（数据内联，file:// 直接打开也能用）
+  docs/p/<slug>/index.html    每篇文章的静态落地页
+  docs/posts.json             对外可用的文章索引
+  docs/sitemap.xml / robots.txt
   README.md                   自动更新「文章目录」区块
 
 用法：python3 scripts/build.py
@@ -22,7 +22,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 POSTS_DIR = ROOT / "posts"
-SITE_DIR = ROOT / "site"
+SITE_DIR = ROOT / "docs"
 SCRIPTS_DIR = ROOT / "scripts"
 CONFIG_PATH = ROOT / "config.json"
 INDEX_TPL = SCRIPTS_DIR / "index-template.html"
@@ -254,7 +254,7 @@ def build_post_pages(posts, v, config):
     p_dir = SITE_DIR / "p"
     p_dir.mkdir(parents=True, exist_ok=True)
 
-    # 清掉已经删除的文章页（只清理 site/p 下由本脚本生成的目录）
+    # 清掉已经删除的文章页（只清理 docs/p 下由本脚本生成的目录）
     keep = {p["slug"] for p in posts}
     for old in p_dir.iterdir():
         if old.is_dir() and old.name not in keep:
@@ -376,8 +376,8 @@ def main():
     build_seo(posts, v, config)
     update_readme(posts, categories)
 
-    log("完成：%d 篇文章，%d 个栏目 → site/" % (len(posts), len([c for c in categories if c["count"]])))
-    log("本地预览：python3 -m http.server 8000 -d site")
+    log("完成：%d 篇文章，%d 个栏目 → docs/" % (len(posts), len([c for c in categories if c["count"]])))
+    log("本地预览：python3 -m http.server 8000 -d docs")
 
 
 if __name__ == "__main__":

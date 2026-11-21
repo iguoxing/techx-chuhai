@@ -38,7 +38,7 @@ techx-chuhai/
 ├── scripts/
 │   ├── build.py             # 零依赖构建脚本
 │   └── page-template.html   # 文章页 HTML 模板
-├── site/                    # 生成的静态站点（GitHub Pages 发布这个目录）
+├── docs/                    # 生成的静态站点（GitHub Pages 发布这个目录）
 │   ├── index.html
 │   ├── posts.json           #   文章索引
 │   ├── p/<slug>/index.html  #   每篇文章的落地页
@@ -54,7 +54,7 @@ git clone https://github.com/iguoxing/techx-chuhai.git
 cd techx-chuhai
 
 python3 scripts/build.py                  # 重新生成站点
-python3 -m http.server 8000 -d site      # 本地预览 http://localhost:8000
+python3 -m http.server 8000 -d docs      # 本地预览 http://localhost:8000
 ```
 
 发布新文章：
@@ -69,7 +69,7 @@ push 后 Actions 自动构建，约 1 分钟网站更新。细节看 [CONTRIBUTI
 
 ## 绑自己的域名
 
-在 DNS 加一条 CNAME 指向 `iguoxing.github.io`，然后在仓库 `Settings → Pages → Custom domain` 填域名即可。脚本不会动 `site/CNAME`，需要的话自己新建一行写域名。当前 `config.json` 里的 `base_url` 是 Pages 默认地址，换域名后同步改一下。
+在 DNS 加一条 CNAME 指向 `iguoxing.github.io`，然后在仓库 `Settings → Pages → Custom domain` 填域名即可。脚本不会动 `docs/CNAME`，需要的话自己新建一行写域名。当前 `config.json` 里的 `base_url` 是 Pages 默认地址，换域名后同步改一下。
 
 ## 文章目录
 
