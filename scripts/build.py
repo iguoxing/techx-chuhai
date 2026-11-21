@@ -174,7 +174,9 @@ def collect(config):
         slugs.add(p["slug"])
         posts.append(p)
 
-    posts.sort(key=lambda p: (p["date_iso"], p["filename"]), reverse=True)
+    # 先按文件名升序（稳定排序），再按日期降序：同日文章按编号 01→20 自然排列
+    posts.sort(key=lambda p: p["filename"])
+    posts.sort(key=lambda p: p["date_iso"], reverse=True)
 
     counts = {}
     for p in posts:
