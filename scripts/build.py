@@ -245,8 +245,6 @@ def build_analytics(config):
 
 
 def base_values(config, posts, categories, tags):
-    repo = config.get("repo", "")
-    repo_url = "https://github.com/" + repo
     base = config.get("base_url", "").rstrip("/") + "/"
     links = "".join(
         '<a href="%s" target="_blank" rel="noopener noreferrer">%s</a>' % (h(l.get("url", "")), h(l.get("label", "")))
@@ -264,8 +262,6 @@ def base_values(config, posts, categories, tags):
         "AUTHOR": h(config.get("author", "")),
         "LICENSE": h(config.get("license", "CC BY-NC-SA 4.0")),
         "LINKS_HTML": links,
-        "REPO_URL": h(repo_url),
-        "CONTRIBUTING_URL": h(repo_url + "/blob/main/CONTRIBUTING.md"),
         "BASE_URL": h(base),
         "YEAR": str(datetime.now().year),
         "ANALYTICS_HTML": build_analytics(config),
@@ -282,7 +278,6 @@ def build_index(config, posts, categories, tags, v):
         "site": {
             "name": config.get("name", ""),
             "tagline": config.get("tagline", ""),
-            "repo": config.get("repo", ""),
         },
         "updated": posts[0]["date"] if posts else "—",
         "total": len(posts),
@@ -351,7 +346,6 @@ def build_index_data(posts, categories, tags, config, v):
             "tagline": config.get("tagline", ""),
             "description": config.get("description", ""),
             "author": config.get("author", ""),
-            "repo": config.get("repo", ""),
             "base_url": v["base"],
         },
         "generated_at": datetime.now().isoformat(timespec="seconds"),
