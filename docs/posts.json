@@ -7,9 +7,9 @@
     "repo": "iguoxing/techx-chuhai",
     "base_url": "https://iguoxing.github.io/techx-chuhai/"
   },
-  "generated_at": "2026-11-21T12:08:10",
-  "updated": "2026-11-21",
-  "total": 24,
+  "generated_at": "2026-11-22T08:21:49",
+  "updated": "2026-11-22",
+  "total": 44,
   "categories": [
     {
       "name": "选品与市场",
@@ -42,11 +42,19 @@
     {
       "name": "增长黑客",
       "count": 20
+    },
+    {
+      "name": "MBA案例",
+      "count": 20
     }
   ],
   "tags": [
     {
       "name": "增长黑客",
+      "count": 40
+    },
+    {
+      "name": "案例分析",
       "count": 20
     },
     {
@@ -54,8 +62,24 @@
       "count": 20
     },
     {
+      "name": "PLG",
+      "count": 4
+    },
+    {
       "name": "PMF",
       "count": 4
+    },
+    {
+      "name": "冷启动",
+      "count": 4
+    },
+    {
+      "name": "出海",
+      "count": 3
+    },
+    {
+      "name": "双边市场",
+      "count": 3
     },
     {
       "name": "增长循环",
@@ -66,11 +90,23 @@
       "count": 3
     },
     {
-      "name": "冷启动",
-      "count": 2
+      "name": "留存",
+      "count": 3
     },
     {
       "name": "渠道",
+      "count": 2
+    },
+    {
+      "name": "独立站",
+      "count": 2
+    },
+    {
+      "name": "病毒循环",
+      "count": 2
+    },
+    {
+      "name": "社区",
       "count": 2
     },
     {
@@ -78,11 +114,31 @@
       "count": 2
     },
     {
+      "name": "补贴",
+      "count": 2
+    },
+    {
       "name": "验证",
       "count": 2
     },
     {
+      "name": "A/B测试",
+      "count": 1
+    },
+    {
       "name": "AI",
+      "count": 1
+    },
+    {
+      "name": "B2B",
+      "count": 1
+    },
+    {
+      "name": "B2B获客",
+      "count": 1
+    },
+    {
+      "name": "LTV",
       "count": 1
     },
     {
@@ -90,7 +146,27 @@
       "count": 1
     },
     {
+      "name": "UGC",
+      "count": 1
+    },
+    {
       "name": "WhatsApp",
+      "count": 1
+    },
+    {
+      "name": "freemium",
+      "count": 1
+    },
+    {
+      "name": "供应链",
+      "count": 1
+    },
+    {
+      "name": "内容分发",
+      "count": 1
+    },
+    {
+      "name": "内容营销",
       "count": 1
     },
     {
@@ -98,7 +174,19 @@
       "count": 1
     },
     {
+      "name": "单元经济",
+      "count": 1
+    },
+    {
+      "name": "危机管理",
+      "count": 1
+    },
+    {
       "name": "发布",
+      "count": 1
+    },
+    {
+      "name": "品牌出海",
       "count": 1
     },
     {
@@ -122,7 +210,15 @@
       "count": 1
     },
     {
+      "name": "开发者增长",
+      "count": 1
+    },
+    {
       "name": "投放",
+      "count": 1
+    },
+    {
+      "name": "推荐机制",
       "count": 1
     },
     {
@@ -134,6 +230,10 @@
       "count": 1
     },
     {
+      "name": "数据驱动",
+      "count": 1
+    },
+    {
       "name": "海关数据",
       "count": 1
     },
@@ -142,15 +242,23 @@
       "count": 1
     },
     {
-      "name": "独立站",
+      "name": "生态",
       "count": 1
     },
     {
-      "name": "留存",
+      "name": "算法推荐",
       "count": 1
     },
     {
       "name": "线索",
+      "count": 1
+    },
+    {
+      "name": "网络效应",
+      "count": 1
+    },
+    {
+      "name": "跨境电商",
       "count": 1
     },
     {
@@ -163,6 +271,426 @@
     }
   ],
   "posts": [
+    {
+      "title": "案例 01｜Hotmail：一封邮件就是一条广告位",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "病毒循环",
+        "冷启动"
+      ],
+      "summary": "没有预算的免费邮箱，靠每封邮件底部的签名链接完成病毒传播——增长黑客的第一个教科书案例。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-01-hotmail-signature-viral-loop/",
+      "reading_time": 4,
+      "word_count": 1314,
+      "filename": "2026-11-22-case-01-hotmail-signature-viral-loop.md",
+      "slug": "case-01-hotmail-signature-viral-loop"
+    },
+    {
+      "title": "案例 02｜Dropbox：一条邀请链接如何做出 39 倍增长",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "推荐机制",
+        "LTV"
+      ],
+      "summary": "不是广告也不是地推，而是「你邀请、我送空间」的双向奖励——把推荐循环做成产品的一部分。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-02-dropbox-referral-loop/",
+      "reading_time": 4,
+      "word_count": 1278,
+      "filename": "2026-11-22-case-02-dropbox-referral-loop.md",
+      "slug": "case-02-dropbox-referral-loop"
+    },
+    {
+      "title": "案例 03｜PayPal：借 eBay 的流量池点爆双边市场",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "双边市场",
+        "补贴"
+      ],
+      "summary": "注册就送 10 美元、推荐再送 10 美元——PayPal 用现金补贴跨过网络效应的临界点，再把 eBay 的流量变成自己的入口。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-03-paypal-ebay-parasitic-growth/",
+      "reading_time": 4,
+      "word_count": 1255,
+      "filename": "2026-11-22-case-03-paypal-ebay-parasitic-growth.md",
+      "slug": "case-03-paypal-ebay-parasitic-growth"
+    },
+    {
+      "title": "案例 04｜YouTube：把播放器变成分发渠道",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "内容分发",
+        "病毒循环"
+      ],
+      "summary": "一段可复制的嵌入代码，让每个博主都成了 YouTube 的推广员——内容型产品的增长，藏在生产者的发布流程里。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-04-youtube-embed-viral-loop/",
+      "reading_time": 3,
+      "word_count": 1142,
+      "filename": "2026-11-22-case-04-youtube-embed-viral-loop.md",
+      "slug": "case-04-youtube-embed-viral-loop"
+    },
+    {
+      "title": "案例 05｜Airbnb：借 Craigslist 的流量池完成冷启动",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "冷启动",
+        "双边市场"
+      ],
+      "summary": "没有房源就没有客人，没有客人就没有房东——Airbnb 的解法不是砸钱，而是把房源同步到别人已有的流量池。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-05-airbnb-craigslist-cold-start/",
+      "reading_time": 4,
+      "word_count": 1234,
+      "filename": "2026-11-22-case-05-airbnb-craigslist-cold-start.md",
+      "slug": "case-05-airbnb-craigslist-cold-start"
+    },
+    {
+      "title": "案例 06｜Uber：每个城市都是一个独立的生意",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "双边市场",
+        "单元经济"
+      ],
+      "summary": "全球扩张的真相是几百次城市级冷启动——把单元经济模型算清楚，才知道哪个城市该加码、哪个该撤。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-06-uber-city-unit-economics/",
+      "reading_time": 3,
+      "word_count": 1172,
+      "filename": "2026-11-22-case-06-uber-city-unit-economics.md",
+      "slug": "case-06-uber-city-unit-economics"
+    },
+    {
+      "title": "案例 07｜Slack：先拿下三个人，再拿下三万人的公司",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "PLG",
+        "B2B"
+      ],
+      "summary": "企业软件不靠销售敲门，而是让一个小团队先用起来——团队级邀请机制让产品自己穿透组织。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-07-slack-team-first-plg/",
+      "reading_time": 3,
+      "word_count": 1201,
+      "filename": "2026-11-22-case-07-slack-team-first-plg.md",
+      "slug": "case-07-slack-team-first-plg"
+    },
+    {
+      "title": "案例 08｜Figma：把协作和社区做成增长飞轮",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "PLG",
+        "社区"
+      ],
+      "summary": "浏览器里多人同时改一张图，免费团队版加模板社区——Figma 证明了协作本身就是最好的获客渠道。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-08-figma-collaborative-plg/",
+      "reading_time": 3,
+      "word_count": 1098,
+      "filename": "2026-11-22-case-08-figma-collaborative-plg.md",
+      "slug": "case-08-figma-collaborative-plg"
+    },
+    {
+      "title": "案例 09｜Duolingo：留存做对了，买量才有意义",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "留存",
+        "A/B测试"
+      ],
+      "summary": "连胜、经验值、排行榜背后是一整套实验流水线——语言学习平台的增长，核心不是拉新而是让人明天还回来。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-09-duolingo-retention-ab-testing/",
+      "reading_time": 3,
+      "word_count": 1119,
+      "filename": "2026-11-22-case-09-duolingo-retention-ab-testing.md",
+      "slug": "case-09-duolingo-retention-ab-testing"
+    },
+    {
+      "title": "案例 10｜Shopify：商户成功才是平台增长飞轮",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "生态",
+        "独立站"
+      ],
+      "summary": "不做流量垄断者，而是帮商户自己带流量——应用商店、主题市场和支付物流，把商户成功变成平台护城河。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-10-shopify-merchant-success-flywheel/",
+      "reading_time": 3,
+      "word_count": 1145,
+      "filename": "2026-11-22-case-10-shopify-merchant-success-flywheel.md",
+      "slug": "case-10-shopify-merchant-success-flywheel"
+    },
+    {
+      "title": "案例 11｜TikTok：先买一个内容池，再谈算法分发",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "算法推荐",
+        "出海"
+      ],
+      "summary": "进入海外市场时没有用户也没有内容——TikTok 用并购拿到现成内容池作为起点，再用算法把内容供给和消费接成飞轮。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-11-tiktok-algorithm-global-cold-start/",
+      "reading_time": 3,
+      "word_count": 1158,
+      "filename": "2026-11-22-case-11-tiktok-algorithm-global-cold-start.md",
+      "slug": "case-11-tiktok-algorithm-global-cold-start"
+    },
+    {
+      "title": "案例 12｜SHEIN：供应链就是增长引擎",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "出海",
+        "供应链"
+      ],
+      "summary": "小单快反让「测款」成本极低，社交内容让流量几乎免费——快时尚出海的核心竞争力，其实是一套增长飞轮。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-12-shein-supply-chain-growth-flywheel/",
+      "reading_time": 3,
+      "word_count": 1052,
+      "filename": "2026-11-22-case-12-shein-supply-chain-growth-flywheel.md",
+      "slug": "case-12-shein-supply-chain-growth-flywheel"
+    },
+    {
+      "title": "案例 13｜Temu：全托管加补贴，能买来多长久的增长？",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "补贴",
+        "出海"
+      ],
+      "summary": "新平台一边要用户一边要商家，全托管降低供给门槛、补贴降低需求门槛——但补贴退坡后的留存才是真考题。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-13-temu-full-managed-subsidy-growth/",
+      "reading_time": 3,
+      "word_count": 1031,
+      "filename": "2026-11-22-case-13-temu-full-managed-subsidy-growth.md",
+      "slug": "case-13-temu-full-managed-subsidy-growth"
+    },
+    {
+      "title": "案例 14｜Anker：从平台卖家到品牌，口碑才是增长资产",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "品牌出海",
+        "跨境电商"
+      ],
+      "summary": "不靠低价厮杀，而是用评论数据反推产品迭代、从平台向品牌独立站迁移——中国跨境品牌化的经典样本。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-14-anker-brand-flywheel-from-seller/",
+      "reading_time": 3,
+      "word_count": 1039,
+      "filename": "2026-11-22-case-14-anker-brand-flywheel-from-seller.md",
+      "slug": "case-14-anker-brand-flywheel-from-seller"
+    },
+    {
+      "title": "案例 15｜HubSpot：免费工具加内容，B2B 获客的另一条路",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "B2B获客",
+        "内容营销"
+      ],
+      "summary": "不打断客户，而是让客户主动找上门——一个免费测分工具、一套内容体系，撑起了 inbound marketing 的增长飞轮。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-15-hubspot-inbound-content-flywheel/",
+      "reading_time": 3,
+      "word_count": 1136,
+      "filename": "2026-11-22-case-15-hubspot-inbound-content-flywheel.md",
+      "slug": "case-15-hubspot-inbound-content-flywheel"
+    },
+    {
+      "title": "案例 16｜Zoom：一个链接带来的爆发增长，和它的信任危机",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "PLG",
+        "危机管理"
+      ],
+      "summary": "免费版加「点链接就能入会」把非用户变成用户，但增长快过信任建设时，病毒循环也会反噬。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-16-zoom-product-virus-and-trust-crisis/",
+      "reading_time": 3,
+      "word_count": 1086,
+      "filename": "2026-11-22-case-16-zoom-product-virus-and-trust-crisis.md",
+      "slug": "case-16-zoom-product-virus-and-trust-crisis"
+    },
+    {
+      "title": "案例 17｜Canva：模板是增长杠杆，分享是分发渠道",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "freemium",
+        "UGC"
+      ],
+      "summary": "让不会设计的人也能做出好看的图，再让作品自带分享属性——freemium 加模板社区把非用户变成传播者。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-17-canva-template-sharing-flywheel/",
+      "reading_time": 3,
+      "word_count": 1061,
+      "filename": "2026-11-22-case-17-canva-template-sharing-flywheel.md",
+      "slug": "case-17-canva-template-sharing-flywheel"
+    },
+    {
+      "title": "案例 18｜Notion：空白页是转化率杀手，模板才是入口",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "社区",
+        "PLG"
+      ],
+      "summary": "功能强大的 All-in-one 工具反而不知从何下手——Notion 用模板社区和达人演示，把复杂产品变成了「拿来就能用」。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-18-notion-template-community-growth/",
+      "reading_time": 3,
+      "word_count": 1070,
+      "filename": "2026-11-22-case-18-notion-template-community-growth.md",
+      "slug": "case-18-notion-template-community-growth"
+    },
+    {
+      "title": "案例 19｜Spotify：每周给你一个回来的理由",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "留存",
+        "数据驱动"
+      ],
+      "summary": "Discover Weekly 不是功能点缀，而是留存基础设施；Wrapped 把用户数据变成可分享的社交内容，增长于是自己发生。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-19-spotify-discover-weekly-retention/",
+      "reading_time": 3,
+      "word_count": 1042,
+      "filename": "2026-11-22-case-19-spotify-discover-weekly-retention.md",
+      "slug": "case-19-spotify-discover-weekly-retention"
+    },
+    {
+      "title": "案例 20｜GitHub：开发者的个人账号，就是最好的获客入口",
+      "date": "2026.11.22",
+      "date_iso": "2026-11-22",
+      "category": "MBA案例",
+      "tags": [
+        "增长黑客",
+        "案例分析",
+        "开发者增长",
+        "网络效应"
+      ],
+      "summary": "免费公共仓库 + 协作机制 + 开源沉淀，让每个开发者的日常使用都变成一次产品传播——最难复制的护城河是社区。",
+      "author": "赵国星",
+      "cover": "",
+      "lang": "zh-CN",
+      "url": "p/case-20-github-developer-network-flywheel/",
+      "reading_time": 3,
+      "word_count": 1058,
+      "filename": "2026-11-22-case-20-github-developer-network-flywheel.md",
+      "slug": "case-20-github-developer-network-flywheel"
+    },
     {
       "title": "AI 自动化别一上来就搭系统，先找那 20 分钟",
       "date": "2026.11.21",

@@ -144,7 +144,30 @@ push 后 Actions 自动构建，约 1 分钟网站更新。细节看 [CONTRIBUTI
 - **2026.11.21** [精读 19｜增长黑客是一套流程，不是技巧清单](posts/2026-11-21-growth-19-growth-hacking-map.md) — Neil Patel 的全景入门：产品、渠道、数据、实验四块一起转，每个动作都要可测量可复制。
 - **2026.11.21** [精读 20｜13 条原则里，最影响增长的是这两条](posts/2026-11-21-growth-20-startups-in-13-sentences.md) — Paul Graham：宁可少数人深爱，也别让多数人觉得还行；你衡量什么，就会变成什么。
 
-> 共 24 篇 · 最近更新 2026.11.21 · 本区块由 `scripts/build.py` 自动生成，请勿手动编辑
+### MBA案例
+
+- **2026.11.22** [案例 01｜Hotmail：一封邮件就是一条广告位](posts/2026-11-22-case-01-hotmail-signature-viral-loop.md) — 没有预算的免费邮箱，靠每封邮件底部的签名链接完成病毒传播——增长黑客的第一个教科书案例。
+- **2026.11.22** [案例 02｜Dropbox：一条邀请链接如何做出 39 倍增长](posts/2026-11-22-case-02-dropbox-referral-loop.md) — 不是广告也不是地推，而是「你邀请、我送空间」的双向奖励——把推荐循环做成产品的一部分。
+- **2026.11.22** [案例 03｜PayPal：借 eBay 的流量池点爆双边市场](posts/2026-11-22-case-03-paypal-ebay-parasitic-growth.md) — 注册就送 10 美元、推荐再送 10 美元——PayPal 用现金补贴跨过网络效应的临界点，再把 eBay 的流量变成自己的…
+- **2026.11.22** [案例 04｜YouTube：把播放器变成分发渠道](posts/2026-11-22-case-04-youtube-embed-viral-loop.md) — 一段可复制的嵌入代码，让每个博主都成了 YouTube 的推广员——内容型产品的增长，藏在生产者的发布流程里。
+- **2026.11.22** [案例 05｜Airbnb：借 Craigslist 的流量池完成冷启动](posts/2026-11-22-case-05-airbnb-craigslist-cold-start.md) — 没有房源就没有客人，没有客人就没有房东——Airbnb 的解法不是砸钱，而是把房源同步到别人已有的流量池。
+- **2026.11.22** [案例 06｜Uber：每个城市都是一个独立的生意](posts/2026-11-22-case-06-uber-city-unit-economics.md) — 全球扩张的真相是几百次城市级冷启动——把单元经济模型算清楚，才知道哪个城市该加码、哪个该撤。
+- **2026.11.22** [案例 07｜Slack：先拿下三个人，再拿下三万人的公司](posts/2026-11-22-case-07-slack-team-first-plg.md) — 企业软件不靠销售敲门，而是让一个小团队先用起来——团队级邀请机制让产品自己穿透组织。
+- **2026.11.22** [案例 08｜Figma：把协作和社区做成增长飞轮](posts/2026-11-22-case-08-figma-collaborative-plg.md) — 浏览器里多人同时改一张图，免费团队版加模板社区——Figma 证明了协作本身就是最好的获客渠道。
+- **2026.11.22** [案例 09｜Duolingo：留存做对了，买量才有意义](posts/2026-11-22-case-09-duolingo-retention-ab-testing.md) — 连胜、经验值、排行榜背后是一整套实验流水线——语言学习平台的增长，核心不是拉新而是让人明天还回来。
+- **2026.11.22** [案例 10｜Shopify：商户成功才是平台增长飞轮](posts/2026-11-22-case-10-shopify-merchant-success-flywheel.md) — 不做流量垄断者，而是帮商户自己带流量——应用商店、主题市场和支付物流，把商户成功变成平台护城河。
+- **2026.11.22** [案例 11｜TikTok：先买一个内容池，再谈算法分发](posts/2026-11-22-case-11-tiktok-algorithm-global-cold-start.md) — 进入海外市场时没有用户也没有内容——TikTok 用并购拿到现成内容池作为起点，再用算法把内容供给和消费接成飞轮。
+- **2026.11.22** [案例 12｜SHEIN：供应链就是增长引擎](posts/2026-11-22-case-12-shein-supply-chain-growth-flywheel.md) — 小单快反让「测款」成本极低，社交内容让流量几乎免费——快时尚出海的核心竞争力，其实是一套增长飞轮。
+- **2026.11.22** [案例 13｜Temu：全托管加补贴，能买来多长久的增长？](posts/2026-11-22-case-13-temu-full-managed-subsidy-growth.md) — 新平台一边要用户一边要商家，全托管降低供给门槛、补贴降低需求门槛——但补贴退坡后的留存才是真考题。
+- **2026.11.22** [案例 14｜Anker：从平台卖家到品牌，口碑才是增长资产](posts/2026-11-22-case-14-anker-brand-flywheel-from-seller.md) — 不靠低价厮杀，而是用评论数据反推产品迭代、从平台向品牌独立站迁移——中国跨境品牌化的经典样本。
+- **2026.11.22** [案例 15｜HubSpot：免费工具加内容，B2B 获客的另一条路](posts/2026-11-22-case-15-hubspot-inbound-content-flywheel.md) — 不打断客户，而是让客户主动找上门——一个免费测分工具、一套内容体系，撑起了 inbound marketing 的增长飞轮。
+- **2026.11.22** [案例 16｜Zoom：一个链接带来的爆发增长，和它的信任危机](posts/2026-11-22-case-16-zoom-product-virus-and-trust-crisis.md) — 免费版加「点链接就能入会」把非用户变成用户，但增长快过信任建设时，病毒循环也会反噬。
+- **2026.11.22** [案例 17｜Canva：模板是增长杠杆，分享是分发渠道](posts/2026-11-22-case-17-canva-template-sharing-flywheel.md) — 让不会设计的人也能做出好看的图，再让作品自带分享属性——freemium 加模板社区把非用户变成传播者。
+- **2026.11.22** [案例 18｜Notion：空白页是转化率杀手，模板才是入口](posts/2026-11-22-case-18-notion-template-community-growth.md) — 功能强大的 All-in-one 工具反而不知从何下手——Notion 用模板社区和达人演示，把复杂产品变成了「拿来就能用」…
+- **2026.11.22** [案例 19｜Spotify：每周给你一个回来的理由](posts/2026-11-22-case-19-spotify-discover-weekly-retention.md) — Discover Weekly 不是功能点缀，而是留存基础设施；Wrapped 把用户数据变成可分享的社交内容，增长于是自己…
+- **2026.11.22** [案例 20｜GitHub：开发者的个人账号，就是最好的获客入口](posts/2026-11-22-case-20-github-developer-network-flywheel.md) — 免费公共仓库 + 协作机制 + 开源沉淀，让每个开发者的日常使用都变成一次产品传播——最难复制的护城河是社区。
+
+> 共 44 篇 · 最近更新 2026.11.22 · 本区块由 `scripts/build.py` 自动生成，请勿手动编辑
 <!-- POSTS:END -->
 
 ## 授权
