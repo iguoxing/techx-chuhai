@@ -2,7 +2,7 @@
 
 > 出海干货 · 只写能落地的
 
-**在线站点**：https://iguoxing.github.io/techx-chuhai/
+**在线站点**：https://novaxtra.cn/ （DNS 生效前可用 https://iguoxing.github.io/techx-chuhai/）
 
 一个用来长期沉淀出海实战文章的 GitHub 仓库：文章全部是 `posts/` 目录下的 Markdown 原文，网站由 `scripts/build.py` 自动生成并托管在 GitHub Pages。**写文章 = 新增一个 `.md` 文件**，不用装 Node、不用装 Jekyll、不用本地构建。
 
@@ -70,7 +70,29 @@ push 后 Actions 自动构建，约 1 分钟网站更新。细节看 [CONTRIBUTI
 
 ## 绑自己的域名
 
-在 DNS 加一条 CNAME 指向 `iguoxing.github.io`，把域名填进 `config.json` 的 `custom_domain`（构建时会自动生成 `docs/CNAME`），再到仓库 `Settings → Pages → Custom domain` 填一次即可。当前 `config.json` 里的 `base_url` 是 Pages 默认地址，换域名后同步改一下。
+当前绑定的是 `novaxtra.cn`（DNSPod 管理）。GitHub 侧已完成：`config.json` 的 `custom_domain` 和 `base_url` 都改成了新域名，构建时自动生成 `docs/CNAME`，Pages 也登记了自定义域名。
+
+**DNSPod 需要加的 5 条记录**（主机记录 / 类型 / 记录值）：
+
+| 主机记录 | 类型 | 记录值 | 说明 |
+| --- | --- | --- | --- |
+| `@` | A | `185.199.108.153` | GitHub Pages IPv4 |
+| `@` | A | `185.199.109.153` | 同上 |
+| `@` | A | `185.199.110.153` | 同上 |
+| `@` | A | `185.199.111.153` | 同上 |
+| `www` | CNAME | `iguoxing.github.io` | **不带仓库名** |
+
+要点：
+
+1. **顺序不能反**：先在 GitHub 仓库登记域名（已完成），再去 DNSPod 加记录，否则域名有被别人抢注的风险
+2. `@` 用 A 记录，不能用 CNAME（裸域的 CNAME 不合规）；`www` 用 CNAME 指向 `iguoxing.github.io`，**不是** `iguoxing.github.io/techx-chuhai/`
+3. 不要加 `*.novaxtra.cn` 这种泛域名解析，有域名接管风险（GitHub 官方明确警告）
+4. 国内 DNSPod 通常几分钟生效，官方上限 24 小时
+5. 生效后到 `Settings → Pages` 勾选 **Enforce HTTPS**，证书是 GitHub 自动签发的，可能要等几分钟到几小时
+
+验证命令：`dig novaxtra.cn +noall +answer -t A` 应返回上面 4 个 IP；`dig www.novaxtra.cn +noall +answer -t CNAME` 应返回 `iguoxing.github.io`。
+
+> 换域名时只需改 `config.json` 的两个字段并重跑构建，DNS 和 Pages 设置不用动。
 
 ## 访问统计
 
@@ -79,7 +101,7 @@ push 后 Actions 自动构建，约 1 分钟网站更新。细节看 [CONTRIBUTI
 ### 第一次启用（只需一次）
 
 1. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/)，左侧 `Analytics & Logs → Web Analytics` → `Add a site`
-2. `Set up hostname` 填站点域名：现在填 `iguoxing.github.io`；以后绑了自定义域名就填那个域名
+2. `Set up hostname` 填站点域名：`novaxtra.cn`（DNS 生效前先用 `iguoxing.github.io`，否则 CF 可能验证不过）
 3. 在站点卡片点 `Manage site`，复制 JS snippet 里 `data-cf-beacon` 中的 **token**（一串字符）
 4. 把 token 填进 `config.json`：
 
@@ -92,7 +114,7 @@ push 后 Actions 自动构建，约 1 分钟网站更新。细节看 [CONTRIBUTI
 
 5. `git push` → Actions 自动重建，几分钟后 CF 后台就能看到数据
 
-> CF 按 hostname 收数据，所以 `iguoxing.github.io` 下你其他 Pages 站点也会混进来。想数据干净：在 CF 后台按路径 `/techx-chuhai` 过滤，或者绑一个专属域名（例如 `notes.novaxtra.com`）再填那个域名。
+> CF 按 hostname 收数据。绑了 `novaxtra.cn` 后数据就只属于这个站，比挂在 `iguoxing.github.io` 下干净（那个 hostname 下其他 Pages 站点的流量会混进来）。注意 `.cn` 和 `.com` 是两个独立域名，novaxtra.com 的流量不会自动算进来。
 
 ### 其他说明
 
