@@ -319,7 +319,7 @@ def build_post_pages(posts, v, config):
             "CATEGORY": h(p["category"]),
             "DATE": h(p["date"]),
             "DATE_ISO": h(p["date_iso"]),
-            "AUTHOR": h(p["author"]),
+            "AUTHOR": h(config.get("author", "")),
             "SUMMARY": h(p["summary"]),
             "WORD_COUNT": str(p["word_count"]),
             "READING_TIME": str(p["reading_time"]),
@@ -332,7 +332,7 @@ def build_post_pages(posts, v, config):
             "NOSCRIPT_PREVIEW": h(p["plain"][:600]),
             "JSONLD_TITLE": json_for_script(p["title"]),
             "JSONLD_DESC": json_for_script(p["summary"]),
-            "JSONLD_AUTHOR": json_for_script(p["author"]),
+            "JSONLD_AUTHOR": json_for_script(config.get("author", "")),
         })
         out_dir = p_dir / p["slug"]
         out_dir.mkdir(parents=True, exist_ok=True)
